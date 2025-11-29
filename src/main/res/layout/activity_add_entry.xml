@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1">
+
+    <!-- Custom Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal"
+        android:background="#E53935"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Exit Icon -->
+        <ImageView
+            android:id="@+id/btnExit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back"
+        android:contentDescription="Exit Button" />
+
+        <!-- Center Text -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yum Journal"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etEntryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#FFB74D"
+                android:hint="Title"
+                android:inputType="textCapWords"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etEntryDescription"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Description"
+                android:backgroundTint="#FFB74D"
+                android:padding="12dp"
+                android:inputType="textMultiLine|textCapSentences"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:layout_marginBottom="24dp"
+                android:scrollHorizontally="false"
+                android:importantForAutofill="no"
+                android:imeOptions="flagNoEnterAction"/>
+
+            <Button
+                android:id="@+id/btnSaveEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Entry"
+                android:backgroundTint="#F4511E"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

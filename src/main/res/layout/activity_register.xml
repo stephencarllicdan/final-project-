@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- Food Logo at the top -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/foodgood"
+            android:contentDescription="App Logo"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- App title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yum Journal"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#E53935"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Email input -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#FFB74D"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="12dp"
+            android:textColorHint="#8D6E63"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <!-- Password input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:backgroundTint="#FFB74D"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="12dp"
+            android:textColorHint="#8D6E63"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <!-- Confirm Password input -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:backgroundTint="#FFB74D"
+            android:padding="14dp"
+            android:layout_marginBottom="32dp"
+            android:drawablePadding="12dp"
+            android:textColorHint="#8D6E63"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <!-- Register button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F4511E"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp"
+            android:stateListAnimator="@null"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- Login text -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="#4CAF50"
+            android:paddingTop="16dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</ScrollView>

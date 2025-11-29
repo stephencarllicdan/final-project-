@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|bottom"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF8E1">
+
+    <ImageView
+        android:id="@+id/ivLogoutIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/exit"
+        android:contentDescription="Logout Icon"/>
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="16sp"
+        android:layout_marginStart="12dp"/>
+</LinearLayout>
