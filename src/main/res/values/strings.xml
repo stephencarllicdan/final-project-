@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YumJournal</string>
+
+    <!-- Entry Adapter / Recipe Strings -->
+    <string name="no_title" translatable="true">No Title</string>
+    <string name="no_ingredients" translatable="true">No Ingredients</string>
+    <string name="source_text" translatable="true">Source: %1$s</string>
+    <string name="serving_text" translatable="true">Serving: %1$s</string>
+    <string name="prep_cook_text" translatable="true">Prep: %1$s | Cook: %2$s</string>
+    <string name="invalid_entry_id" translatable="true">Invalid entry ID</string>
+    <string name="entry_deleted" translatable="true">Entry deleted</string>
+    <string name="delete_failed" translatable="true">Failed to delete entry</string>
+</resources>
